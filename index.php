@@ -33,7 +33,7 @@
                 <input type="date" class="form-control" id="DateBirth" name="DateBirth" placeholder="Ingrese la fecha de nacimiento ">
             </div>
             <div class="col-md-12">
-                <label for="ID" class="form-label">Numero de Identificacion</label>
+                <label for="ID" class="form-label">Numero de Identificación</label>
                 <input type="number" class="form-control" id="ID" name="id" placeholder="Ingrese el numero de identificacion">
             </div>
 
@@ -43,23 +43,25 @@
                 <input type="tel" class="form-control" id="phone" name="tel" placeholder="Ingrese el numero de Telefono ">
             </div>
             <div class="col-12">
-            <label for="countries" class="form-label">Pais</label>
-                    <select class="form-select form-select-sm" id="countries" name="countries aria-label=".form-select-sm example">
-                        
-                       
-                    </select>
+                <label for="countries" class="form-label">Pais</label>
+                <select class="form-select form-select-sm" id="countries" name="countries aria-label=">
+                   
+                   
+                </select>
 
-                </div>
+            </div>
             <div class="col-12">
-                <label for="occupation" class="form-label">Ocupacion</label>
+                <label for="occupation" class="form-label">Ocupación:</label>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-tecnico" required>
+                    <input type="checkbox" class="form-check-input " id="validationFormCheck2" name="radio-tecnico"  required>
                     <label class="form-check-label" for="validationFormCheck2">Técnico</label>
                 </div>
-               
+
                 <div class="form-check mb-3">
-                    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-notecnico" required>
+                    <input type="checkbox" class="form-check-input  " id="validationFormCheck3"   name="radio-notecnico"   required>
                     <label class="form-check-label" for="validationFormCheck3">No soy Técnico</label>
+                    <div id="msg" ></div>
+                    
 
                 </div>
             </div>

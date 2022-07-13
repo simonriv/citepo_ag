@@ -16,10 +16,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
- 
-
-
 }
 
 #form {
@@ -33,9 +29,12 @@ body {
   box-shadow: 0 0 20px 1px rgba(228, 219, 219, 0.3);
 }
 
-#btn{
-    width: 500px;
+#btn {
+  width: 500px;
   max-width: 100%;
 }
 
-
+#form #msg #msg2 {
+  display: block;
+  margin-block: 10px;
+}
