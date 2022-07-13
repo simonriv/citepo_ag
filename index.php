@@ -16,6 +16,12 @@
     <section>
 
         <form class="row g-3" id="form">
+            <div class="col-md-12">
+                <h2>Formulario de Registro</h2>
+                <p>le agradecemos por su interés en participar en nuestra conferencia. complete nuestro formulario de registro para recibir su certificado de participante </p>
+
+            </div>
+
             <div class="col-md-6">
                 <label for="Name" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="Name" name="name" placeholder="Ingrese los  Nombres ">
@@ -44,24 +50,33 @@
             </div>
             <div class="col-12">
                 <label for="countries" class="form-label">Pais</label>
-                <select class="form-select form-select-sm" id="countries" name="countries aria-label=">
-                   
-                   
-                </select>
+                <input type="text" class="form-control" id="countries" name="countries" placeholder="Ingrese el pais ">
 
             </div>
             <div class="col-12">
+                <label for="Province" class="form-label">Provincia/Estado/Departamento</label>
+                <input type="text" class="form-control" id="Province" name="Province" placeholder="Ingrese la Provincia/Estado/Departamento ">
+
+            </div>
+            <div class="col-12">
+                <label for="city" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="Ingrese la Ciudad ">
+
+            </div>
+
+
+            <div class="col-12">
                 <label for="occupation" class="form-label">Ocupación:</label>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input " id="validationFormCheck2" name="radio-tecnico"  required>
+                    <input type="checkbox" class="form-check-input " id="validationFormCheck2" name="radio-tecnico" required>
                     <label class="form-check-label" for="validationFormCheck2">Técnico</label>
                 </div>
 
                 <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input  " id="validationFormCheck3"   name="radio-notecnico"   required>
+                    <input type="checkbox" class="form-check-input  " id="validationFormCheck3" name="radio-notecnico" required>
                     <label class="form-check-label" for="validationFormCheck3">No soy Técnico</label>
-                    <div id="msg" ></div>
-                    
+                    <div id="msg"></div>
+
 
                 </div>
             </div>
