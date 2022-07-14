@@ -11,23 +11,17 @@
     <title>Registro Citepo</title>
 </head>
 
-
-
-
-
-
-
 <section>
 
 
-    
-    <form class="row g-3" id="form">
-    
-    <div  class="col-md-12" >
-        <h2 >Formulario de Registro</h2>
-        <p>le agradecemos por su interés en participar en nuestra conferencia. complete nuestro formulario de registro para recibir su certificado de participante </p>
 
-    </div>
+    <form class="row g-3" id="form">
+
+        <!-- <div class="col-md-12">
+            <h2>Formulario de Registro</h2>
+            <p>le agradecemos por su interés en participar en nuestra conferencia. complete nuestro formulario de registro para recibir su certificado de participante </p>
+
+        </div> -->
 
         <div class="col-md-6">
             <label for="Name" class="form-label">Nombre</label>
