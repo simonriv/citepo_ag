@@ -12,11 +12,13 @@
 body {
   margin: 0;
   background-image: url("../img/FONDO\ CITEPO\ PAGINA\ WEB.png");
-  height: 900px;
+  height: 1100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 #form {
   width: 500px;
