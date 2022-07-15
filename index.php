@@ -36,7 +36,7 @@
             <input type="email" class="form-control" id="Email" name="email" placeholder="Ingrese el correo electronico " required>
         </div>
         <div class="col-md-12">
-            <label for="ID" class="form-label">fecha de nacimiento</label>
+            <label for="ID" class="form-label">Fecha de nacimiento</label>
             <input type="date" class="form-control" id="DateBirth" name="DateBirth" placeholder="Ingrese la fecha de nacimiento " required>
         </div>
         <div class="col-md-12">
