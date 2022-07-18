@@ -8,7 +8,7 @@ class PDF extends FPDF
  function Header()
 {
     // Logo
-     $this->Image('img\Logo-citepo-Oficial (1) (1).png',60,20,81,39.7,'png');
+     $this->Image('../templates/img/Logo-citepo-Oficial (1) (1).png',60,20,81,39.7,'png');
 
     // Arial bold 15
     $this->SetFont('Arial','B',20);
@@ -27,7 +27,7 @@ class PDF extends FPDF
 // Pie de página
 function Footer()
 {
-    $this->Image('img\QR_code.png',85,180,40,40,'png');
+    $this->Image('../templates/img/QR_code.png',85,180,40,40,'png');
     // Posición: a 1,5 cm del final
     $this->SetY(-15);
     // Arial italic 8
@@ -37,7 +37,7 @@ function Footer()
 }
 }
 
-require 'app\templates\cn.php';
+require '../templates/cn.php';
 $consulta = "SELECT * FROM propietario WHERE doc = '123'";
 $resultado = $mysqli->query($consulta);
 

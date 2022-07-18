@@ -1,4 +1,4 @@
 <?php 
-$mysqli = new mysqli("localhost", "Davidson", "12345", "condominio")
+$mysqli = new mysqli("localhost", "citepsriver", "135851m0n#A", "citepo_ag")
 
 ?>
