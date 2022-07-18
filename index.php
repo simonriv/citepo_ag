@@ -32,11 +32,11 @@
             <input type="text" class="form-control" id="LastName" name="apellido" placeholder="Ingrese los Apellidos " required>
         </div>
         <div class="col-md-12">
-            <label for="Emai" class="form-label">Correo Electronico</label>
+            <label for="Emai" class="form-label">Correo Electrónico</label>
             <input type="email" class="form-control" id="Email" name="email" placeholder="Ingrese el correo electronico " required>
         </div>
         <div class="col-md-12">
-            <label for="ID" class="form-label">fecha de nacimiento</label>
+            <label for="ID" class="form-label">Fecha de nacimiento</label>
             <input type="date" class="form-control" id="DateBirth" name="DateBirth" placeholder="Ingrese la fecha de nacimiento " required>
         </div>
         <div class="col-md-12">
@@ -46,7 +46,7 @@
 
 
         <div class="col-12">
-            <label for="phone" class="form-label">Telefono</label>
+            <label for="phone" class="form-label">Teléfono</label>
             <input type="tel" class="form-control" id="phone" name="tel" placeholder="Ingrese el numero de Telefono " required>
         </div>
         <div class="col-12">
