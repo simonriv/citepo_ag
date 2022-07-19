@@ -40,11 +40,7 @@ class PDF extends FPDF
 require_once('app\config\connection.php');
 $cn = new Connection();
 
-
-
-
-
-$consulta = "SELECT * FROM propietario WHERE doc = '123'";
+$consulta = "SELECT * FROM client WHERE ClientId = '123'";
 $resultado = $cn->connect()->query($consulta);
 
 $pdf = new PDF();
@@ -54,7 +50,7 @@ $pdf->SetFont('Arial', '', 16);
 
 
 
-while ($row = $resultado->fetchAll()) {
+while ($row = $resultado->fetch()) {
     $pdf->SetTextColor(242, 139, 48);
     $pdf->Setx(80);
     $pdf->SetFont('Arial', 'B', 19);
