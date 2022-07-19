@@ -62,6 +62,21 @@ class Functions extends Connection{
         }
     } 
 
+    public function verification($id){
+        try {
+            $q = "SELECT Name, LastName, DNI, Phone FROM client WHERE ClientId = $id";
+            $query = $this->connect()->query($q);
+            $name = $query->fetch(PDO::FETCH_OBJ)->Name;
+            $lastName = $query->fetch(PDO::FETCH_OBJ)->LastName;
+            $dni = $query->fetch(PDO::FETCH_OBJ)->DNI;
+            $phone = $query->fetch(PDO::FETCH_OBJ)->Phone;
+
+            return $name . "," . $lastName . "," . $dni . "," . $phone;
+        } catch(PDOException $e) {
+            return "Error 002" . $e;
+        }
+    }
+
 
 }
 
