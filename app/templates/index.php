@@ -40,7 +40,9 @@ class PDF extends FPDF
 require_once('app\config\connection.php');
 $cn = new Connection();
 
-$consulta = "SELECT * FROM client WHERE ClientId = '123'";
+$id = $_GET["id"];
+
+$consulta = "SELECT * FROM client WHERE ClientId = $id";
 $resultado = $cn->connect()->query($consulta);
 
 $pdf = new PDF();

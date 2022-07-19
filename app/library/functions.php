@@ -45,13 +45,13 @@ class Functions extends Connection{
         }
     }
 
-    public function register($name,$last_name,$email,$dni,$zip_phone,$phone,$country,$state,$city,$ocupation,$area,$birthdate,$stauts,$pdf){
+    public function register($name,$last_name,$email,$dni,$zip_phone,$phone,$country,$state,$city,$ocupation,$birthdate,$stauts){
         try {
             if($this->checkExistance($email) !== "Error" && $this->checkExistance($email) == false){
-                $q = "INSERT INTO client (Name,LastName,Email,DNI,PhoneZip,Phone,Country,State,City,Ocupation,Area,BirthDate,Status,Pdf) VALUES 
-                (:name,:last_name,:email,:dni,:zip_phone,:phone,:country,:state,:city,:ocupation,:area,:birthdate,:stauts,:pdf)";
+                $q = "INSERT INTO client (Name,LastName,Email,DNI,PhoneZip,Phone,Country,State,City,Ocupation,BirthDate,Status) VALUES 
+                (:name,:last_name,:email,:dni,:zip_phone,:phone,:country,:state,:city,:ocupation,:birthdate,:stauts)";
                 $query = $this->connect()->prepare($q);
-                $query->execute(['name' => $name,'last_name' => $last_name,'email' => $email, 'dni' => $dni,'zip_phone' => $zip_phone, 'phone' => $phone, 'country' => $country, 'state' => $state, 'city' => $city, 'ocupation' => $ocupation, 'area' => $area, 'birthdate' => $birthdate,'status' => $stauts, 'pdf' => $pdf]);
+                $query->execute(['name' => $name,'last_name' => $last_name,'email' => $email, 'dni' => $dni,'zip_phone' => $zip_phone, 'phone' => $phone, 'country' => $country, 'state' => $state, 'city' => $city, 'ocupation' => $ocupation, 'birthdate' => $birthdate,'status' => $stauts]);
                 
                 return $this->lastInsertedId("client","ClientId");
             }else {
